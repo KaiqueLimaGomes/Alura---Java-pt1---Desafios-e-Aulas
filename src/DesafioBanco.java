@@ -82,7 +82,9 @@ public class DesafioBanco {
 
                     if(valor > saldo){
                         System.out.println("Saldo insuficiente!");
-                    }else{
+                    } else if (valor <= 0) {
+                        System.out.println("Entrada Inválida!");
+                    } else{
                         saldo -= valor;
                         System.out.println("Valor transferido com sucesso!");
                         System.out.println("***************************** \n");
