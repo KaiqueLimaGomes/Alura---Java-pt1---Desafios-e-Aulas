@@ -1,3 +1,6 @@
+//Olá, essa foi a minha resolução refente ao desafio final com a temática bancaria.
+//Autor: Kaique Lima.
+
 import java.util.Scanner;
 
 public class DesafioBanco {
@@ -60,9 +63,14 @@ public class DesafioBanco {
                             **** Menu - Receber Valor ****
                             
                             Digite o valor a ser recebido: R$   """);
-                    saldo += inputTeclado.nextDouble();
-                    ;
-                    System.out.println("Valor recebido com sucesso!");
+                    valor = inputTeclado.nextDouble();
+
+                    if(valor <= 0){
+                        System.out.println("Entrada Inválida!");
+                    }else{
+                        saldo += valor;
+                        System.out.println("Valor recebido com sucesso!");
+                    }
                     break;
 
                 case 3:
